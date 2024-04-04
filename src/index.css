@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.task-list {
+  display: grid;
+  padding: 2rem;
+}
+
+.action-bar {
+  display: flex;
+  padding: 2rem;
+}
+
+.action-bar button {
+  margin: 0.5rem;
+}
+
+.create-modal form div {
+  padding: 0.25rem;
+}
