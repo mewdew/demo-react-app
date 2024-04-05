@@ -31,7 +31,7 @@ export function useListDispatch() {
 function listReducer(list, action) {
   switch (action.type) {
     case 'added': {
-      return [...list, action.item];
+      return [...list, {...action.item, id: list.length + 1}];
     }
     case 'removed': {
       return list.filter(t => t.id !== action.id);

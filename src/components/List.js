@@ -27,7 +27,7 @@ function List({query}) {
           </thead>
           <tbody>
             {
-              (query ? getFilteredList() : data).map((row) => (
+              (query ? getFilteredList() : data).map((row, index) => (
                 <tr key={row.id}>
                   {
                     columns.map((column) => (

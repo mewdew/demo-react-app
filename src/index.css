@@ -29,3 +29,12 @@ code {
 .create-modal form div {
   padding: 0.25rem;
 }
+
+.create-modal form div label {
+  margin-right: 0.25rem;
+}
+
+create-modal button {
+  padding: 0.25rem;
+  margin: 0.5rem;
+}
