@@ -1,4 +1,5 @@
-import { useList, useListDispatch } from '../store/List'
+import DeleteOutlinedIcon from '@mui/icons-material/Delete';
+import { useList, useListDispatch } from '../store/List';
 
 function List({query}) {
     const data = useList();
@@ -24,6 +25,7 @@ function List({query}) {
                 ))
               }
             </tr>
+            <tr></tr>
           </thead>
           <tbody>
             {
@@ -34,13 +36,15 @@ function List({query}) {
                       <td key={column.id}>{row[column.id]}</td>
                     ))
                   }
-                  <td onClick={ () => {
+                  <td className="action-item" onClick={ () => {
                       dispatch({
                           type: 'removed',
                           id: row.id
                         })
                     }
-                  }>Remove</td>
+                  }>
+                    <DeleteOutlinedIcon sx={{ color: '#0078d4' }} />
+                  </td>
                 </tr>
               ))
             }

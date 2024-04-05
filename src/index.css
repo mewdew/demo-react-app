@@ -12,19 +12,31 @@ code {
     monospace;
 }
 
-.task-list {
-  display: grid;
-  padding: 2rem;
-}
+/* Action bar */
 
 .action-bar {
   display: flex;
-  padding: 2rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .action-bar button {
   margin: 0.5rem;
 }
+
+/* Search Bar */
+
+.search-bar {
+  display: flex;
+  padding: 1rem 2rem;
+}
+
+.search-bar input {
+  width: 20vw;
+  padding: 0.25rem;
+}
+
+/* Create modal */
 
 .create-modal form div {
   padding: 0.25rem;
@@ -37,4 +49,43 @@ code {
 create-modal button {
   padding: 0.25rem;
   margin: 0.5rem;
+}
+
+/* List */
+
+.task-list {
+  display: grid;
+  padding: 0 2rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table tr {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+table th, table td {
+  text-align: left;
+}
+
+table td.action-item {
+  cursor: pointer;
+}
+
+/* commons */
+
+.action-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filled-button {
+  background: #0078d4;
+  border: 1px solid #0078d4;
+  color: white;
 }
